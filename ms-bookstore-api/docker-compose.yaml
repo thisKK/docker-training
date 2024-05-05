@@ -3,6 +3,16 @@ version: '3.8'
 services:
   api:
     build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - db
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    restart: unless-stopped
 
   db:
     image: mysql:8.4.0
@@ -11,3 +21,11 @@ services:
       MYSQL_USER: 'admin_db'
       MYSQL_PASSWORD: 'P@ssw0rd'
       MYSQL_ROOT_PASSWORD: 'P@ssw0rd'
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+    restart: unless-stopped
+
+volumes:
+  db-data:
