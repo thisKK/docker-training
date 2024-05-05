@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+
+  db:
+    image: mysql:8.4.0
+    environment:
+      MYSQL_DATABASE: 'bookstore'
+      MYSQL_USER: 'admin_db'
+      MYSQL_PASSWORD: 'P@ssw0rd'
+      MYSQL_ROOT_PASSWORD: 'P@ssw0rd'
