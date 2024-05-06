@@ -50,6 +50,13 @@ You can access the API at the following endpoints:
 - DELETE /books/{id}: Deletes a book by its ID.
 
 ### 4. Using the API
+
+[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://god.gw.postman.com/run-collection/34717687-7815bd76-2c67-41cd-81ae-440292e1a6f3?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D34717687-7815bd76-2c67-41cd-81ae-440292e1a6f3%26entityType%3Dcollection%26workspaceId%3D23d8a6fa-6d40-45c5-aa87-50ea99d6aeba)
+
+or 
+
+[Postman Collection](https://elements.getpostman.com/redirect?entityId=34717687-7815bd76-2c67-41cd-81ae-440292e1a6f3&entityType=collection)
+
 Here are some example curl commands to interact with the API:
 
 - List All Books
