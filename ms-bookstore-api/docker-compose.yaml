@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   api:
-    build: .
+    image: thiskk/ms-storage:workshop2.0
 
   db:
     image: mysql:8.4.0
